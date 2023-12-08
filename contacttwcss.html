@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          let email = document.forms["myForm"]["email"].value;
+          let username = document.forms["myForm"]["username"].value;
+          let password = document.forms["myForm"]["password"].value;
+          let gender = document.forms["myForm"]["gender"].value;
+          let religion = document.forms["myForm"]["religion"].value;
+          let address = document.forms["myForm"]["address"].value;
+          let hobbies = document.forms["myForm"]["hobbies"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          } else if (email == "") {
+            alert("Email must be filled out")
+            return false;
+          } else if (username == "") {
+            alert("Username must be filled out")
+            return false;
+          } else if (password == "") {
+            alert("Please add your password")
+            return false;
+          } else if (gender == "") {
+            alert("Please choose your gender")
+            return false;
+          } else if (religion == "") {
+            alert("Please choose your problem")
+            return false;
+          } else if (address == "") {
+            alert("please write your problem")
+            return false;
+          } else if (hobbies == "") {
+            alert("Please checking before you submit")
+            return false;
+          } else {
+            return false;
+          }
+        }
+      </script>
+</head>
+<body class="bg-green-50">
+    <!-- Navbar -->
+    <nav class="bg-white w-screen">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start  px-11 py-2 bg-white">
+                <div class="flex flex-shrink-0">
+                    <img class="h-8 w-auto" src="logo grab.jpg" alt="...">
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <a href="indextaildwindcss.html" class="text-black block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                        <a href="abouttwcss.html" class="text-black hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">About</a>
+                        <a href="gallerytwcss.html" class="text-lack hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">Gallery</a>
+                        <a href="contacttwcss.html" class="text-black hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                    </div>
+                </div>
+                <form class="flex ml-auto sm-ml-6:hidden" role="search">
+                    <input class="text-gray-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+             </div>
+            </div>
+          </div>
+        </div>
+          <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="indextaildwindcss.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+            <a href="abouttwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+            <a href="gallerytwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Gallery</a>
+            <a href="contacttwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
+      <div class="container mx-auto my-5 p-4 bg-white rounded shadow">
+        <h2 class="text-center text-2xl md:text-3xl lg:text-4xl font-semibold">Contact Me</h2>
+        <p class="text-center pb-5">If you need anything, please complete the following form, and you will be connected to me. Thank you for visiting!</p>
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name  : <input type="text" name="fname"><br><br>
+            Email : <input type="text" name="email"><br><br>
+            Username : <input type="text" name="username"><br><br>
+            Password : <input type="password" name="password"><br><br>
+            Gender : <input type="radio" name="radio" id="gender">Male
+            <input type="radio" name="radio" id="gender">Female<br><br>
+            <select name="select-box" id="religion">
+                <option value="0">Select Problem:</option>
+                <option value="1">Login Issues</option>
+                <option value="2">Account Locked</option>
+                <option value="3">Payment Errors</option>
+                <option value="4">Website Errors</option>
+                <option value="5">Other</option>
+            </select> <br><br>
+            Write here : <textarea name="subject" id="address" cols="50" rows="10"></textarea><br>
+            <input type="checkbox" name="checkbox" id="hobbies">Please checking this before you submit
+            <br><br>
+          
+            <input class="bg-green-500 rounded-md" type="submit" value="Submit">
+        </form>
+      </div>
+    
+      <!-- Footer -->
+      <footer class="text-center py-3">
+        <div class="container mx-auto">
+          <div class="footer-contentabout flex flex-wrap justify-between text-center">
+            <div class="footer-sectionabout mb-8">
+                <h3 class="font-bold text-xl py-2">Tentang Kami</h3>
+                <ul>
+                    <li><a href="abouttwcss.html">About me</a></li>
+                    <li><a href="contacttwcss.html">Contact me</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-sectionabout mb-8">
+                <h3 class="font-bold text-xl py-2">Layanan</h3>
+                <ul>
+                    <li><a href="indextaildwindcss.html">Home</a></li>
+                    <li><a href="gallerytwcss.html">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-sectionabout mb-8">
+                <h3 class="font-bold text-xl py-2">Media Sosial</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/priscila.natalia.3154?mibextid=ZbWKwL">Facebook</a></li>
+                    <li><a href="https://x.com/Natalia16171183?t=s09lAtGh8906-Glypjto_g&s=09">Twitter</a></li>
+                    <li><a href="https://instagram.com/priscila_nataliaaa?igshid=MTNiYzNiMzkwZA==">Instagram</a></li>
+                </ul>
+            </div>
+          </div>
+          <p class="text-gray-600">&copy; 2023 Contact ME. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

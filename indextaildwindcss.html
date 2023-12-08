@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white w-screen">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="flex flex-1 items-center justify-between sm:items-stretch sm:justify-start  px-11 py-2 bg-white">
+                <div class="flex flex-shrink-0">
+                    <img class="h-8 w-auto" src="logo grab.jpg" alt="...">
+                </div>
+                <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                        <a href="indextaildwindcss.html" class="text-black block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+                        <a href="abouttwcss.html" class="text-black hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">About</a>
+                        <a href="gallerytwcss.html" class="text-lack hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">Gallery</a>
+                        <a href="contacttwcss.html" class="text-black hover:text-gray-500 block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+                    </div>
+                </div>
+                <form class="flex ml-auto sm-ml-6:hidden" role="search">
+                    <input class="text-gray-300 hover:text-white block rounded-md px-3 py-2 text-base font-medium" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+             </div>
+            </div>
+          </div>
+        </div>
+          <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="indextaildwindcss.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+            <a href="abouttwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+            <a href="gallerytwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Gallery</a>
+            <a href="contacttwcss.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
+
+      <!-- Isi Konten -->
+      <div class="video-container relative w-screen">
+        <video autoplay loop muted class="w-screen">
+            <source src="hero_banner_singapore_q50_mobile.webm" type="video/mp4">
+        </video>
+        <div class="title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold">Grab.Jadikan Setiap<br>Hari Lebih Istimewa.</h1>
+        </div>
+        <div class="firstnav w-48 bg-gray-800">
+            <ul class="list-none p-0">
+                <li class="w-auto py-6 px-6 font-bold bg-green-800 w-screen">
+                    <a href="#" class="text-white">Tentang Kami</a>
+                </li>
+                <li class="w-auto py-6 px-6 mt-0 font-bold bg-green-600 active:bg-green-600 w-screen">
+                    <a href="#" class="text-white">Hubungi kami</a>
+                </li>
+            </ul>
+        </div>        
+        <div class="container-text mt-8 md:mt-16">
+            <div class="content text-lg md:text-xl lg:text-2xl text-center md:text-left">
+                <h3 class="font-semibold px-6">Dari Layanan kebutuhan<br>sehari-hari hingga peluang<br>penghasilan. Satu aplikasi<br>serbabisa</h3>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- <div class="boxed-content grid w-[100%] text-[#383e43] font-[1.125rem] flex pt-30 ">
+        <div class="service-title grid-cols-1 w-477 flex-1">
+            <h3>Pengantaran</h3>
+        </div>    
+        <div class="container-service flex row-md-4 flex-1">
+            <div class="service-content flex">
+                <div class="service-icon">
+                    <div class="gambar-makanan">
+                    </div>
+                    
+                    <div class="service-text mb-40">
+                        <h4>Makanan</h4>
+                        <p>Dapatkan semua makanan diantarkan ke depan pintu Anda</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="service-content flex">
+                <div class="service-icon">
+                    <div class="gambar-makanan ">
+                    </div>
+                    
+                    <div class="service-text mb-40">
+                        <h4>Mart</h4>
+                        <p>Temukan semua kebutuhan pokok Anda dan banyak lagi</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="service-content flex">
+                <div class="service-icon">
+                    <div class="gambar-">
+                    </div>
+                    
+                    <div class="service-text mb-40">
+                        <h4>Pengiriman</h4>
+                        <p>kirim paket, dokumen, dan lain-lainnya</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="service-content flex">
+                <div class="service-icon-last">
+                    <div class="gambar-">
+                    </div>
+                    
+                    <div class="service-text mb-40">
+                        <h4>Jastip</h4>
+                        <p>Dapatkan semua kebutuhan Anda secara fleksibel dimana saja</p>
+                    </div>
+                </div> 
+            </div>
+        </div>    
+    </div>
+    <div class="boxed-content">
+
+        <div class="service-title">
+            <h3>Mobilitas</h3>
+        </div>
+
+        <div class="container-service">
+
+            <div class="service-content">
+                <div class="service-icon-last">
+                    <div class="gambar-makanan">
+                    </div>
+                    <div class="service-text">
+                        <h4>Transportasi</h4>
+                        <p>Pilih beragam kendaraan untuk membawa Anda dari lokasi satu ke lainnya dengan aman</p>
+                    </div>
+                </div> 
+            </div>
+        </div>    
+    </div> -->
+</div>
+
+<div class="tampilkan-layanan mt-8 text-center">
+    <p class="text-black font-bold text-2xl cursor-pointer">Tampilkan Layanan lainnya +</p>
+</div>
+<!-- Berita -->
+<div class="container-berita container mx-auto">
+    <h1 class="ruang-berita text-3xl md:text-4xl lg:text-5xl py-6">Ruang Berita</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="berita-1">
+            <img src="berita 1.jpeg" alt="berita1" class="w-full h-auto">
+            <div class="text-berita mt-4">
+                <p class="text-sm md:text-base">19/10/23</p>
+                <p class="text-base md:text-lg">Pertama di Indonesia, Fitur Mode Hening di...</p>
+            </div>
+            <p class="btn-lengkap mt-4">Baca Selengkapnya</p>
+        </div>
+        
+        <div class="berita-2 mt-8 md:mt-0">
+            <img src="berita 2.jpeg" alt="berita2" class="w-full h-auto">
+            <div class="text-berita mt-4">
+                <p class="text-sm md:text-base">06/09/23</p>
+                <p class="text-base md:text-lg">Setia Pangkal Rejeki, Ratusan Mitra Pengemu...</p>
+            </div>
+            <p class="btn-lengkap mt-4">Baca Selengkapnya</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+        <div class="berita-3">
+            <img src="logo grawaaaabz.jpg" alt="berita3" class="w-full h-auto">
+            <div class="text-berita mt-4">
+                <p class="text-sm md:text-base">11/08/23</p>
+                <p class="text-base md:text-lg">Pernyataan resmi terkait insiden mitra GrabBike d...</p>
+            </div>
+            <p class="btn-lengkap mt-4">Baca Selengkapnya</p>
+        </div>
+        
+        <div class="berita-4 mt-8 md:mt-0">
+            <img src="OIP.jpg" alt="berita4" class="w-full h-auto">
+            <div class="text-berita mt-4">
+                <p class="text-sm md:text-base">08/05/23</p>
+                <p class="text-base md:text-lg">Grab Indonesia Umumkan Pengangkatan Ridzki...</p>
+            </div>
+            <p class="btn-lengkap mt-4">Baca Selengkapnya</p>
+        </div>
+    </div>
+
+    <div class="btn-terbaru mt-8">
+        <a href="#" class="text-black block text-center py-2 px-4 bg-white border border-black border-1 hover:bg-white">Berita Terbaru Lainnya</a>
+    </div>    
+</div>
+
+<!-- Akhir Berita  -->
+</div>
+
+<!-- Footer -->
+<footer class="footer-container bg-gray-800 text-white py-16">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        <div class="footer-section">
+            <div class="logo-footer">
+                <div class="slogan"></div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Tentang Grab</h3>
+            <ul>
+                <li><a href="#">Cerita Grab</a></li>
+                <li><a href="#">Inside Grab</a></li>
+                <li><a href="#">Hubungan Investor</a></li>
+                <li><a href="#">Lokasi</a></li>
+                <li><a href="#">Tanggung jawab & Keselamatan</a></li>
+                <li><a href="#">Dampak Positif</a></li>
+                <li><a href="#">Ruang Berita</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">GrabForGoodFund</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Pengguna</h3>
+            <ul>
+                <li><a href="#">Yang Terbaru</a></li>
+                <li><a href="#">Transportasi</a></li>
+                <li><a href="#">GrabFood</a></li>
+                <li><a href="#">GrabMart</a></li>
+                <li><a href="#">GrabExpress</a></li>
+                <li><a href="#">Pembayaran Grab</a></li>
+                <li><a href="#">GrabRewards</a></li>
+                <li><a href="#">Paket Hemat</a></li>
+                <li><a href="#">GrabKios</a></li>
+                <li><a href="#">GrabGifts</a></li>
+                <li><a href="#">GrabMart Kilat</a></li>
+                <li><a href="#">Clean & Fix</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">GrabJastip</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Pengemudi</h3>
+            <ul>
+                <li><a href="#">Yang Terbaru</a></li>
+                <li><a href="#">Transportasi</a></li>
+                <li><a href="#">GrabFood</a></li>
+                <li><a href="#">GrabExpress</a></li>
+                <li><a href="#">Pusat Pengemudi</a></li>
+                <li><a href="#">Kode Etik</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Mitra Penjual</h3>
+            <ul>
+                <li><a href="#">Panduan</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">GrabFood</a></li>
+                <li><a href="#">GrabKios</a></li>
+                <li><a href="#">GrabMart</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Perusahaan</h3>
+            <ul>
+                <li><a href="#">Grab of Business</a></li>
+                <li><a href="#">GrabAds</a></li>
+                <li><a href="#">GrabGifts</a></li>
+                <li><a href="#">GrabExpress</a></li>
+                <li><a href="#">Layanan Pengantaran untuk Bisnis</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Tautan Langsung</h3>
+            <ul>
+                <li><a href="#">Pusat Bantuan</a></li>
+                <li><a href="#">Menu Makanan</a></li>
+                <li><a href="#">Layanan Pengaduan GrabMart</a></li>
+                <li><a href="#">Developer Portal</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 class="mb-4">Tautan Terkait</h3>
+            <ul>
+                <li><a href="https://fti.unai.edu/">FTI UNAI</a></li>
+                <li><a href="https://unai.edu/">UNAI Website</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+     <!-- Akhir Isi Konten -->
+</body>
+</html>

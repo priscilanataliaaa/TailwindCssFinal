@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grab Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#">
+                    <img src="logo.jpg" alt="Logo" class="w-32">
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-white">Home</a>
+                <a href="#" class="text-white">About</a>
+                <a href="#" class="text-white">Gallery</a>
+                <a href="#" class="text-white">Contact</a>
+            </div>
+            <form class="flex items-center">
+                <input type="search" placeholder="Search" class="border p-2 rounded-md mr-2">
+                <button type="submit" class="bg-white text-blue-500 px-4 py-2 rounded-md">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative">
+        <video autoplay loop muted class="w-full">
+            <source src="hero_banner_singapore_q50_mobile.webm" type="video/mp4">
+        </video>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4">Grab. Jadikan Setiap Hari Lebih Istimewa.</h1>
+            <firstnav>
+                <ul class="flex">
+                    <li><a href="#" class="text-white">Tentang Kami</a></li>
+                    <li class="active"><a href="#" class="text-white">Hubungi kami</a></li>
+                </ul>
+            </firstnav>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container mx-auto mt-8">
+        <div class="text-lg">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Dari Layanan kebutuhan sehari-hari hingga peluang penghasilan. Satu aplikasi serbabisa.</h3>
+        </div>
+
+        <!-- Service Categories -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-md p-4 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full"></div>
+                    <div class="ml-2">
+                        <h4 class="text-lg font-semibold">Pengantaran</h4>
+                    </div>
+                </div>
+                <p>Dapatkan semua makanan diantarkan ke depan pintu Anda.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-md p-4 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full"></div>
+                    <div class="ml-2">
+                        <h4 class="text-lg font-semibold">Mart</h4>
+                    </div>
+                </div>
+                <p>Temukan semua kebutuhan pokok Anda dan banyak lagi.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-md p-4 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full"></div>
+                    <div class="ml-2">
+                        <h4 class="text-lg font-semibold">Pengiriman</h4>
+                    </div>
+                </div>
+                <p>Kirim paket, dokumen, dan lain-lainnya.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white rounded-md p-4 shadow-md">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full"></div>
+                    <div class="ml-2">
+                        <h4 class="text-lg font-semibold">Jastip</h4>
+                    </div>
+                </div>
+                <p>Dapatkan semua kebutuhan Anda secara fleksibel dimana saja.</p>
+            </div>
+        </div>
+
+        <!-- More Services Button -->
+        <div class="text-center mt-6">
+            <p class="text-blue-500">Tampilkan Layanan lainnya +</p>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="container-berita container mx-auto mt-8">
+        <!-- News Title -->
+        <h1 class="ruang-berita text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Ruang Berita</h1>
+
+        <!-- News Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- News 1 -->
+            <div class="bg-white rounded-md overflow-hidden shadow-md">
+                <img src="berita1.jpeg" alt="Berita 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-500">19/10/23</p>
+                    <p class="font-semibold">Pertama di Indonesia, Fitur Mode Hening di...</p>
+                    <p class="text-blue-500 cursor-pointer">Baca Selengkapnya</p>
+                </div>
+            </div>
+
+            <!-- News 2 -->
+            <div class="bg-white rounded-md overflow-hidden shadow-md">
+                <img src="berita2.jpeg" alt="Berita 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-500">06/09/23</p>
+                    <p class="font-semibold">Setia Pangkal Rejeki, Ratusan Mitra Pengemu...</p>
+                    <p class="text-blue-500 cursor-pointer">Baca Selengkapnya</p>
+                </div>
+            </div>
+
+            <!-- News 3 -->
+            <div class="bg-white rounded-md overflow-hidden shadow-md">
+                <img src="logo_grawaaaabz.jpg" alt="Berita 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-500">11/08/23</p>
+                    <p class="font-semibold">Pernyataan resmi terkait insiden mitra GrabBike d...</p>
+                    <p class="text-blue-500 cursor-pointer">Baca Selengkapnya</p>
+                </div>
+            </div>
+
+            <!-- News 4 -->
+            <div class="bg-white rounded-md overflow-hidden shadow-md">
+                <img src="OIP.jpg" alt="Berita 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <p class="text-sm text-gray-500">08/05/23</p>
+                    <p class="font-semibold">Grab Indonesia Umumkan Pengangkatan Ridzki...</p>
+                    <p class="text-blue-500 cursor-pointer">Baca Selengkapnya</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- View More News Button -->
+        <div class="text-center mt-6">
+            <a href="#" class="text-blue-500">Berita Terbaru Lainnya</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex flex-wrap">
+            <!-- Footer Sections -->
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <h3 class="text-xl font-bold mb-4">Tentang Grab</h3>
+                <ul>
+                    <li><a href="#">Cerita Grab</a></li>
+                    <li><a href="#">Inside Grab</a></li>
+                    <!-- ... (tambahkan item-item lainnya) ... -->
+                </ul>
+            </div>
+
+            <!-- ... (tambahkan bagian lainnya) ... -->
+
+            <!-- Direct Links -->
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <h3 class="text-xl font-bold mb-4">Tautan Langsung</h3>
+                <ul>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                    <li><a href="#">Menu Makanan</a></li>
+                    <!-- ... (tambahkan item-item lainnya) ... -->
+                </ul>
+            </div>
+
+            <!-- ... (tambahkan bagian lainnya) ... -->
+
+            <!-- Related Links -->
+            <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
+                <h3 class="text-xl font-bold mb-4">Tautan Terkait</h3>
+                <ul>
+                    <li><a href="https://fti.unai.edu/" target="_blank">FTI UNAI</a></li>
+                    <li><a href="https://unai.edu/" target="_blank">UNAI Website</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</body>
+</html>
